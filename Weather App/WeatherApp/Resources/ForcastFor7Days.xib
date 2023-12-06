@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DailyForecast" customModule="WeatherApp" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dDo-wS-7H9">
+                    <rect key="frame" x="-20" y="0.0" width="410" height="188"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GnA-PG-aWg" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="410" height="500"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KS9-2G-td2" customClass="DailyForecastitem" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="54" width="390" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4c-A7-2QX" customClass="DailyForecastitem" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="222" width="390" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="spU-2s-AgO" customClass="DailyForecastitem" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="278" width="390" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QRW-Vv-cxP" customClass="DailyForecastitem" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="110" width="390" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </view>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXa-AJ-xwC" customClass="DailyForecastitem" customModule="WeatherApp" customModuleProvider="target">
+                                    <rect key="frame" x="20" y="166" width="390" height="48"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Forecast for 5 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6a-Ez-XAI">
+                                    <rect key="frame" x="36" y="20" width="146" height="21"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="500" id="I0Q-2d-Laq"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="GnA-PG-aWg" firstAttribute="height" secondItem="CRV-G4-XKF" secondAttribute="height" id="8m2-2i-dJO"/>
+                        <constraint firstItem="GnA-PG-aWg" firstAttribute="top" secondItem="dDo-wS-7H9" secondAttribute="top" id="G4B-Nu-p0Q"/>
+                        <constraint firstItem="GnA-PG-aWg" firstAttribute="leading" secondItem="dDo-wS-7H9" secondAttribute="leading" id="ms5-44-gHz"/>
+                        <constraint firstItem="GnA-PG-aWg" firstAttribute="centerX" secondItem="dDo-wS-7H9" secondAttribute="centerX" id="o8N-Cr-uwO"/>
+                        <constraint firstAttribute="bottom" secondItem="GnA-PG-aWg" secondAttribute="bottom" id="qxi-y6-VZB"/>
+                        <constraint firstAttribute="trailing" secondItem="GnA-PG-aWg" secondAttribute="trailing" id="tYO-qI-Hrt"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="CRV-G4-XKF"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="tDC-gs-1R9"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="dDo-wS-7H9" secondAttribute="bottom" id="0Z2-G7-kWq"/>
+                <constraint firstAttribute="trailing" secondItem="dDo-wS-7H9" secondAttribute="trailing" id="RVh-39-KGj"/>
+                <constraint firstItem="dDo-wS-7H9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-20" id="Zdc-Ly-Fyp"/>
+                <constraint firstItem="dDo-wS-7H9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tDL-Nz-6W0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="126.71755725190839" y="-78.873239436619727"/>
+        </view>
+    </objects>
+</document>
